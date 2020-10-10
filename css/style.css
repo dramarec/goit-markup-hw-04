@@ -136,7 +136,7 @@ footer .logo {
 
 .hero-title {
   /* outline: 2px solid tomato; */
-  display: inline-block;
+  /* display: inline-block; */
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -150,7 +150,7 @@ footer .logo {
 
 .hero-link {
   /* outline: 2px solid tomato; */
-  display: inline-block;
+  /* display: inline-block; */
   min-width: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -216,8 +216,13 @@ footer .logo {
 
 /* Команда-comand */
 
+.comand {
+  background-color: #f5f4fa;
+}
+
 .conteiner.comand {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .card-team {
@@ -226,19 +231,23 @@ footer .logo {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
+}
+.card-info {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .comand-list {
   display: flex;
-  justify-content: center;
   text-align: center;
-  /* flex-wrap: wrap; */
 }
 
-.comand-list .card-team + .card-team {
+/* .comand-list .card-team + .card-team {
   margin-left: 30px;
+} */
+
+.card-team:not(:last-child) {
+  margin-right: 30px;
 }
 
 .comand-list .title,
@@ -251,11 +260,41 @@ footer .logo {
 .comand-list .title {
   color: var(--title-text-color);
   font-weight: 500;
-  padding-top: 30px;
 }
 
-.comand {
-  background-color: #f5f4fa;
+.card-team .social-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social-team .item + .item {
+  margin-left: 10px;
+}
+
+/* clients */
+
+.conteiner.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients.list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients.list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients.list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
 }
 
 /* porfolio.html */
@@ -366,34 +405,6 @@ footer .logo {
   font-size: 16px;
   line-height: 1.9; /* 30 */
   /* padding: 4px 24px 20px; */
-}
-
-.card-team .social-team {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-.social-team .item + .item {
-  margin-left: 10px;
-}
-
-/* clients */
-
-.section.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.clients.list {
-  display: flex;
-  justify-content: center;
-}
-.clients.list .item + .item {
-  margin-left: 30px;
-}
-.clients.list .item:hover,
-.clients.list .item:focus {
-  background-color: var(--accent-color);
 }
 
 /* footer */
