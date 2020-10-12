@@ -175,6 +175,36 @@ footer .logo {
 
 /* Особенности-features */
 
+.list-item::before {
+  display: block;
+  height: 120px;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--second-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../svg/group/antenna.svg);
+  background-size: 65px;
+}
+
+.icon-clock::before {
+  background-image: url(../svg/group/clock.svg);
+  background-size: 67px;
+}
+
+.icon-diagram::before {
+  background-image: url(../svg/group/diagram.svg);
+  background-size: 70px;
+}
+
+.icon-astronaut::before {
+  background-image: url(../svg/group/astronaut.svg);
+  background-size: 70px;
+}
+
 .conteiner.feature {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -186,7 +216,7 @@ footer .logo {
   justify-content: space-between;
 }
 
-.feature-list .item {
+.feature-list .list-item {
   width: 270px;
 }
 
