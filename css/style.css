@@ -111,10 +111,10 @@ footer .logo {
 } */
 
 .envelope.link::before {
-	width: 10px;
-	height: 16px;
+	width: 16px;
+	height: 12px;
 	content: "";
-	background-image: url(../svg/header/smartphone.svg);
+	background-image: url(../svg/header/envelope.svg);
 	margin-right: 10px;
 }
 .smartphone.link::before {
@@ -343,6 +343,39 @@ footer .logo {
 	margin-left: 10px;
 }
 
+.item .instagram {
+	background-color: var(--accent-color);
+	border-radius: 50%;
+	display: inline-block;
+	background-image: url(../svg/card/instagram.svg);
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.item .twitter {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(../svg/card/twitter.svg);
+}
+
+.item .facebook {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(../svg/card/facebook.svg);
+}
+
+.item .linkedin {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(../svg/card/linkedin.svg);
+}
+
 /* clients */
 
 .clients {
@@ -407,6 +440,7 @@ footer .logo {
 	color: var(--hero-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
 	border-radius: 4px;
 }
 
@@ -434,6 +468,7 @@ footer .logo {
 	background: #ffffff;
 	box-sizing: border-box;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	cursor: pointer;
 }
 .flex-card {
 	/* width: 370px; */
@@ -539,10 +574,58 @@ footer .logo {
 	margin-bottom: 20px;
 }
 
-.social {
+.footer-social {
 	display: flex;
 }
 
-.social .item + .item {
+.footer-social .item + .item {
 	margin-left: 10px;
+}
+
+.footer-social .item {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.footer-social .item:hover,
+.footer-social .item:focus {
+	background-color: var(--accent-color);
+}
+
+.footer-instagram {
+	display: inline-block;
+	background-image: url(../svg/footer/instagram.svg);
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer-twitter {
+	display: inline-block;
+	background-image: url(../svg/footer/twitter.svg);
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.footer-facebook {
+	display: inline-block;
+	background-image: url(../svg/footer/facebook.svg);
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.footer-linkedin {
+	display: inline-block;
+	background-image: url(../svg/footer/linkedin.svg);
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
