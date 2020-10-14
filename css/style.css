@@ -290,7 +290,7 @@ footer .logo {
 	/* padding-bottom: 94px; */
 }
 
-/* Команда-comand */
+/* ==========Команда-comand=========== */
 
 .comand {
 	background-color: #f5f4fa;
@@ -335,16 +335,42 @@ footer .logo {
 	font-weight: 500;
 }
 
-.card-team .social-team {
+.social.list {
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
 }
-.social-team .item + .item {
+.social .item + .item {
 	margin-left: 10px;
 }
 
-/* clients */
+.item-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	/* border-radius: 50%; */
+	/* background-color: white; */
+	color: #afb1b8;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-link:hover {
+	background-color: var(--accent-color);
+	border-radius: 50%;
+}
+
+.icon {
+	fill: currentColor;
+	width: 20px;
+	height: 20px;
+}
+
+.item-link:hover .icon {
+	fill: white;
+}
+
+/* ============clients============ */
 
 .clients {
 	padding-top: 94px;
@@ -360,14 +386,49 @@ footer .logo {
 	margin-right: 30px;
 }
 
-.clients-list .item {
+.clients-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #afb1b8;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	width: 170px;
 	height: 90px;
+}
+.clients-link:hover {
+	border: 1px solid #2196f3;
+}
+.clients-link:hover .client-logo {
+	color: var(--accent-color);
+}
+
+.client-logo {
+	fill: currentColor;
+}
+.client-logo.one {
+	width: 44px;
+	height: 49px;
+}
+.client-logo.two {
+	width: 41px;
+	height: 43px;
+}
+.client-logo.three {
+	width: 80px;
+	height: 42px;
+}
+.client-logo.four {
+	width: 80px;
+	height: 42px;
+}
+.client-logo.five {
+	width: 59px;
+	height: 47px;
+}
+.client-logo.six {
+	height: 45.44px;
+	width: 88.48px;
 }
 
 /* porfolio.html */
