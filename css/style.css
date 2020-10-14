@@ -217,18 +217,25 @@ footer .logo {
 
 /* ========== Особенности-features ========== */
 
-.list-item::before {
-	display: block;
+.item-features {
+	display: flex;
+	width: 270px;
 	height: 120px;
-	content: "";
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	justify-content: center;
+	align-items: center;
+	/* content: ""; */
+	/* background-size: contain; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
 	background-color: var(--second-color);
 	border-radius: 4px;
 }
+.icon-features {
+	width: 70px;
+	height: 70px;
+}
 
-.icon-antenna::before {
+/* .icon-antenna::before {
 	background-image: url(../svg/group/antenna.svg);
 	background-size: 65px;
 }
@@ -246,7 +253,7 @@ footer .logo {
 .icon-astronaut::before {
 	background-image: url(../svg/group/astronaut.svg);
 	background-size: 70px;
-}
+} */
 
 .features {
 	padding-top: 94px;
@@ -297,7 +304,6 @@ footer .logo {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* padding-bottom: 94px; */
 }
 
 /* ========== Команда-comand =========== */
@@ -485,7 +491,6 @@ footer .logo {
 .examples {
 	display: flex;
 	flex-wrap: wrap;
-	/* margin: -15px; */
 }
 
 .card-content {
@@ -505,12 +510,9 @@ footer .logo {
 	cursor: pointer;
 }
 .flex-card {
-	/* width: 370px; */
-	/* margin: 15px; */
 	background: #ffffff;
 	box-sizing: border-box;
 	margin-right: 30px;
-	/* margin-bottom: 30px; */
 	width: calc((100% - 60px) / 3);
 }
 
@@ -534,16 +536,11 @@ footer .logo {
 	font-size: 18px;
 	line-height: 2; /* 36 */
 	letter-spacing: 0.06em;
-	/* padding-top: 20px; */
-	/* padding-left: 24px; */
-	/* padding-right: 24px; */
-	/* margin-bottom: 4px; */
 }
 
 .examples p {
 	font-size: 16px;
 	line-height: 1.9; /* 30 */
-	/* padding: 4px 24px 20px; */
 }
 
 /* ================ footer ================ */
@@ -598,6 +595,8 @@ footer .logo {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.6);
 }
+
+/* footer social link */
 
 .join {
 	display: block;
